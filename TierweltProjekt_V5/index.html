@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unterwasserwelt</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Footer mit Datenschutz-Link und Akzeptieren-Button -->
+    <script src="script.js"></script>
+    <script src="prettier.config.js"></script>
+</head>
+
+<body>
+    <!-- Header mit Navigationsleiste -->
+    <h1>Willkommen in der Unterwasserwelt</h1>
+    <header>
+        <nav>
+            <ol class="horizontal-list">
+                <li><a href="korallenriffe.html">Korallenriffe</a></li>
+                <li><a href="tiefsee.html">Tiefsee</a></li>
+                <li><a href="PolareRegionen.html">Polare Regionen</a></li>
+                <li><a href="TropischeKorallenriffe.html">Tropische Korallenriffe</a></li>
+                <li><a href="Meeresvögel.html">Meeresvögel</a></li>
+                <li><a href="Meeressäuger.html">Meeressäuger</a></li>
+                <li><a href="Fakten_und_Statistiken.html">Fakten und Statistiken</a></li>
+                <li><a href="Kontakt_Impression.html">Kontakt/Impression</a></li>
+            </ol>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Abschnitt zur Begrüßung -->
+        <section class="welcome-section">
+            <h2>Entdecken Sie die faszinierende Unterwasserwelt</h2>
+            <p>Erleben Sie die Vielfalt und Schönheit der Meeresbewohner.</p>
+            <p>Tauchen Sie ein: Eine Reise in die Geheimnisse der Tiefen</p>
+            <div class="image-container">
+                <img src="bilder/index/unterwasser_startseite.jpg" alt="Unterwasserwelt">
+            </div>
+        </section>
+
+        <!-- Abschnitt Über die Unterwasserwelt -->
+        <section class="about-section">
+            <h2>Über die Unterwasserwelt</h2>
+            <p>Die Unterwasserwelt ist ein atemberaubendes Reich, das den Großteil unseres Planeten bedeckt. Unter der Oberfläche der Ozeane und Meere verbirgt sich eine reiche Vielfalt an Lebensformen und Landschaften, die oft noch unerforscht und geheimnisvoll sind.</p>
+            <p>Die Unterwasserwelt beheimatet eine erstaunliche Vielfalt an Meereslebewesen, darunter bunte Korallenriffe, majestätische Wale, gefährliche Haie, elegante Rochen, neugierige Delphine und eine Vielzahl kleinerer Fische und wirbelloser Tiere. Jede Spezies hat ihre einzigartigen Merkmale und spielt eine wichtige Rolle im marinen Ökosystem.</p>
+            <p>Korallenriffe, die als die "Regenwälder der Meere" bekannt sind, bieten Lebensraum für unzählige Arten und dienen als Nahrungsquelle und Schutzzonen für viele Meeresbewohner. Diese farbenfrohen Riffe sind auch ein beliebtes Ziel für Taucher und Schnorchler, die die Schönheit und Vielfalt der Unterwasserwelt hautnah erleben möchten.</p>
+            <p>Die Tiefsee ist eine weitere faszinierende Region der Unterwasserwelt, die bislang nur oberflächlich erforscht wurde. Hier leben bizarre Kreaturen, die an die extremen Bedingungen der Dunkelheit und des hohen Drucks angepasst sind. Von leuchtenden Quallen bis hin zu seltenen Tiefsee-Fischen gibt es in der Tiefsee eine Vielzahl von Organismen, die die Grenzen unserer Vorstellungskraft herausfordern.</p>
+            <p>Die Unterwasserwelt ist jedoch auch bedroht durch menschliche Aktivitäten wie Überfischung, Verschmutzung, Klimawandel und die Zerstörung von Lebensräumen. Der Schutz und die Erhaltung dieser kostbaren Ressource sind von entscheidender Bedeutung, um die Artenvielfalt zu bewahren und die Gesundheit der Ozeane für zukünftige Generationen zu gewährleisten.</p>
+            <p>Insgesamt ist die Unterwasserwelt ein faszinierendes und fragiles Ökosystem, das es zu erforschen, zu schützen und zu bewahren gilt. Sie bietet nicht nur eine Quelle der Schönheit und Inspiration, sondern auch lebenswichtige Ressourcen und Ökosystemdienstleistungen für unseren Planeten.</p>
+        </section>
+    </main>
+
+    <!-- Footer mit Datenschutz-Link und Akzeptieren-Button -->
+    <footer>
+        <p class="footer-text">&copy; 2024 Unterwasserwelt GmbH | <a href="datenschutz.html" class="footer-text">Datenschutz</a></p>
+        <div class="button-container">
+            <button id="acceptButton" onclick="akzeptieren()">Ich habe es verstanden und akzeptiere</button>
+        </div>
+        <!-- CSRF-Token -->
+        <input type="hidden" id="csrfToken" value="GENERATED_CSRF_TOKEN">
+    </footer>
+</body>
+</html>

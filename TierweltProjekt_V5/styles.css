@@ -1,0 +1,276 @@
+/* Allgemeine Styles, die für alle Geräte gelten */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px; /* Standard-Schriftgröße */
+    margin: 0;
+    padding: 0;
+}
+
+/* Media-Query für Handys */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px; /* Kleinere Schriftgröße für Handys */
+    }
+}
+
+/* Media-Query für Tablets */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    body {
+        font-size: 18px; /* Größere Schriftgröße für Tablets */
+    }
+}
+
+/* Media-Query für Desktop-Bildschirme */
+@media only screen and (min-width: 1025px) {
+    body {
+        font-size: 20px; /* Noch größere Schriftgröße für Desktop-Bildschirme */
+    }
+}
+
+/* Media-Query für Chrome-Browser */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    body {
+        font-size: 16px; /* Standard-Schriftgröße für Chrome-Browser */
+    }
+}
+
+/* Media-Query für Firefox-Browser */
+@-moz-document url-prefix() {
+    body {
+        font-size: 17px; /* Abweichende Schriftgröße für Firefox-Browser */
+    }
+}
+
+/* Media-Query für Microsoft Edge-Browser */
+@supports (-ms-ime-align:auto) {
+    body {
+        font-size: 19px; /* Abweichende Schriftgröße für Edge-Browser */
+    }
+}
+
+/* Header */
+header {
+    background-color: #006994;
+    color: #fff;
+    padding: 20px; /* Erhöhe das Padding auf 40px oder eine andere gewünschte Größe */
+    width: 100%; /* Strecke den Header über die gesamte Breite des Bildschirms */
+    z-index: 2; /* Stellen Sie sicher, dass der Header über anderen Elementen liegt */
+    top: 60px; /* Platziere den Header am oberen Bildschirmrand */
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    width: 100%; /* Strecke die Überschrift über die gesamte Breite des Bildschirms */
+    z-index: 2; /* Stellen Sie sicher, dass die Überschrift über anderen Elementen liegt */
+    top: 0; /* Platzieren Sie die Überschrift am oberen Bildschirmrand */
+}
+
+h2 {
+    margin-top: 5px; /* Erhöhe den Abstand zwischen dem h2 und dem header und h1 */
+    z-index: 1; /* Stellen Sie sicher, dass der h2 unter anderen Elementen liegt */
+}
+
+/* Zusätzliches Element für den weißen Balken */
+/* Weißer Balken */
+.header-divider {
+    position: absolute;
+    top: calc(100% - 2px); /* Positionieren Sie den Balken direkt unter dem h1-Element */
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    z-index: 1; /* Stellen Sie sicher, dass der Balken unter dem h1-Element liegt */
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hauptinhalt */
+main {
+    padding: 20px;
+    margin-bottom: 100px; /* Platz für die Fußzeile schaffen */
+    background-color: #fff; /* Weißen Hintergrund setzen */
+    position: relative; /* Position relativ für das übergeordnete Element */
+    z-index: 1; /* Stellen Sie sicher, dass der Hauptinhalt über anderen Elementen liegt */
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section.about-section {
+    margin-bottom: 40px; /* Erhöhen Sie den Abstand nach Bedarf */
+}
+
+/* Fußzeile */  /* Footer */
+footer {
+    background-color: #006994; /* Dunklere Fußzeilen-Hintergrundfarbe */
+    color: white; /* Textfarbe in der Fußzeile */
+    padding: 15px; /* Reduzierter Innenabstand der Fußzeile */
+    margin-top: 10px; /* Optional: Reduzierter Außenabstand der Fußzeile */
+    margin-bottom: 0; /* Optional: Reduzierter Außenabstand der Fußzeile */
+    position: fixed; /* Position fest am unteren Bildschirmrand */
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 999; /* Stellen Sie sicher, dass die Fußzeile über anderen Elementen liegt */
+}
+.footer-text {
+    color: white;
+}
+
+/* Button-Container */
+.button-container {
+    position: fixed;
+    bottom: 20px; /* Abstand zum unteren Rand des Viewports */
+    width: 100%;
+    text-align: center;
+}
+
+/* Stil für den Datenschutz-Button */
+#acceptButton {
+    display: block;
+    margin:20px auto;
+    padding: 8px 16px;
+    background-color: #091bdb; /* Rote Hintergrundfarbe */
+    color: #fff; /* Weiße Textfarbe */
+    border: none; /* Kein Rand */
+    border-radius: 5px; /* Abgerundete Ecken */
+    cursor: pointer; /* Zeiger-Cursor bei Mouseover */
+    z-index: 1000; /* Stellen Sie sicher, dass der Button über anderen Elementen liegt */
+    position: absolute; /* Position des Buttons festlegen */
+    bottom: -40px; /* Ändern Sie diesen Wert nach Bedarf */
+    left: 50%; /* Button in der Mitte zentrieren */
+    transform: translateX(-50%); /* Button horizontal zentrieren */
+    transition: bottom 0.3s ease; /* Animieren Sie den Button beim Ein- und Ausblenden */
+}
+
+#acceptButton:hover {
+    background-color: #0056b3; /* Dunkleres Blau bei Mouseover */
+}
+
+/* Breadcrumb-Navigation */
+nav[aria-label="Breadcrumb"] {
+    padding: 10px 0;
+    background-color: #e9ecef; /* Hintergrundfarbe, die sich gut einfügt */
+    border-radius: 0.25rem; /* Abgerundete Ecken für modernes Aussehen */
+    margin-bottom: 20px; /* Abstand nach unten, um nicht zu nah am Hauptinhalt zu sein */
+}
+
+nav[aria-label="Breadcrumb"] ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Entfernt den Standard-Abstand und die Listensymbole */
+    text-align: center; /* Zentriert die Breadcrumbs, kann je nach Design angepasst werden */
+}
+
+nav[aria-label="Breadcrumb"] li {
+    display: inline; /* Zeigt die Listenelemente in einer Zeile an */
+    font-size: 0.875em; /* Kleinere Schriftgröße für die Breadcrumb-Elemente */
+}
+
+nav[aria-label="Breadcrumb"] a {
+    color: #007bff; /* Blaue Farbe für Links, passt zum Header */
+    text-decoration: none; /* Keine Unterstreichung bei den Links */
+    padding: 0 5px;
+}
+
+nav[aria-label="Breadcrumb"] li+li:before {
+    content: "›"; /* Modernes Trennzeichen */
+    color: #6c757d; /* Farbe für das Trennzeichen */
+    padding: 0 5px; /* Gleichmäßiger Abstand um das Trennzeichen */
+}
+
+/* Responsive Anpassungen */
+@media only screen and (max-width: 600px) {
+    nav[aria-label="Breadcrumb"] ul {
+        text-align: left; /* Links ausrichten auf kleinen Bildschirmen */
+    }
+}
+
+
+.gallery-category {
+    display: none; /* Standardmäßig ausgeblendet */
+}
+
+.gallery-item {
+    display: inline-block; /* Bilder nebeneinander anordnen */
+    margin-right: 10px; /* Abstand zwischen den Bildern */
+}
+
+.gallery-item img {
+    max-width: 100px; /* Optional: Maximale Breite der Bilder */
+}
+
+
+/*Hauptkommentar: Stildefinitionen für eine horizontale Liste von Links
+    Dieser CSS-Code definiert die Stileigenschaften für eine horizontale Liste von Links.
+    Er entfernt die Nummerierung, stellt die Listenelemente nebeneinander dar,
+    fügt einen Abstand zwischen den Elementen hinzu und ändert die Schriftfarbe auf Weiß.
+    Außerdem wird der Unterstrich für die Links entfernt.*/
+
+.horizontal-list {
+    list-style-type: none; /* Entfernt die Nummerierung */
+    padding: 0;
+    margin: 0;
+}
+
+.horizontal-list li {
+    display: inline-block; /* Zeigt die Listenelemente nebeneinander an */
+    margin-right: 10px; /* Fügt einen Abstand zwischen den Elementen hinzu */
+}
+
+.horizontal-list li:last-child {
+    margin-right: 0; /* Entfernt den Abstand für das letzte Element */
+}
+
+.horizontal-list li a {
+    color: white; /* Ändert die Schriftfarbe auf Weiß */
+    text-decoration: none; /* Entfernt den Unterstrich */
+}
+
+
+/* Bild vergrösser */
+.image-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden; /* Verhindert, dass das vergrößerte Bild aus dem Container herausragt */
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover img {
+    transform: scale(1.2); /* Vergrößert das Bild um 20% */
+}
+
+
+/* CSS für Bildergalerieanimationen */
+.gallery img {
+    opacity: 0;
+    transition: opacity 2s ease-in-out; /* Reduzieren Sie die Übergangszeit für einen schnelleren Effekt */
+}
+
+.gallery img.active {
+    opacity: 1;
+}
+

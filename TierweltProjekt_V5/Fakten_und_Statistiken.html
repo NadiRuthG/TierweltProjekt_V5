@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fakten und Statistiken - Unterwasserwelt</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Externes JavaScript -->
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1>Fakten und Statistiken über die Unterwasserwelt</h1>
+    <!-- Header mit Navigationsleiste -->
+    <header>
+        <nav>
+            <ul>
+                <!-- Navigationslinks -->
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="korallenriffe.html">Korallenriffe</a></li>
+                <li><a href="tiefsee.html">Tiefsee</a></li>
+                <li><a href="PolareRegionen.html">Polare Regionen</a></li>
+                <li><a href="TropischeKorallenriffe.html">Tropische Korallenriffe</a></li>
+                <li><a href="Meeresvögel.html">Meeresvögel</a></li>
+                <li><a href="Meeressäuger.html">Meeressäuger</a></li>
+                <li><a href="Kontakt_Impression.html">Kontakt/Impression</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Abschnitt mit Fakten und Statistiken -->
+        <section class="facts-section">
+            <h2>Interessante Fakten und Statistiken</h2>
+            <table>
+                <thead>
+                    <!-- Tabellenkopf -->
+                    <tr>
+                        <th>Fakt/Statistik</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <!-- Tabelleninhalt -->
+                    <tr>
+                    <!-- Tabellenzeile mit Links zu den Details -->
+                        <td><a href="https://de.wikipedia.org/wiki/Ozean" target="_blank">Über 70% der Erdoberfläche sind von Wasser bedeckt.</a></td>
+                        <td>Dies unterstreicht die überwältigende Ausdehnung der Ozeane auf unserem Planeten.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://de.wikipedia.org/wiki/Marianengraben" target="_blank">Der tiefste Punkt im Ozean ist der Marianengraben mit einer Tiefe von etwa 11.034 Metern.</a></td>
+                        <td>Der Marianengraben ist bekannt für seine extreme Tiefe und seine einzigartige geologische Formation.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://de.wikipedia.org/wiki/Great_Barrier_Reef" target="_blank">Das Great Barrier Reef vor der Küste Australiens ist das größte Korallenriffsystem der Welt.</a></td>
+                        <td>Das Great Barrier Reef ist ein UNESCO-Weltnaturerbe und ein Hotspot der Biodiversität.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://de.wikipedia.org/wiki/Meeresbiologie" target="_blank">Etwa 50-80% des gesamten Lebens auf der Erde befindet sich im Meer.</a></td>
+                        <td>Die Ozeane sind reich an einer Vielzahl von Lebensformen, von winzigen Plankton bis zu riesigen Walen.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://de.wikipedia.org/wiki/Meeresboden" target="_blank">Mehr als 80% des Meeresbodens bleiben unerforscht.</a></td>
+                        <td>Obwohl viel über die Ozeane bekannt ist, gibt es noch viele unentdeckte Gebiete und Geheimnisse in den Tiefen.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://de.wikipedia.org/wiki/Photosynthese#Im_Meer" target="_blank">Die Ozeane produzieren mehr als die Hälfte des Sauerstoffs in der Atmosphäre.</a></td>
+                        <td>Marine Algen und Phytoplankton spielen eine entscheidende Rolle bei der Sauerstoffproduktion.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://de.wikipedia.org/wiki/%C3%9Cberfischung" target="_blank">Überfischung hat dazu geführt, dass etwa 90% der großen Raubfische weltweit verschwunden sind.</a></td>
+                        <td>Dies hat schwerwiegende Auswirkungen auf das marine Ökosystem und die Nahrungsketten.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://de.wikipedia.org/wiki/Klimawandel" target="_blank">Meerestemperaturen steigen aufgrund des Klimawandels, was die Korallenbleiche und den Verlust von Lebensräumen für viele Arten verursacht.</a></td>
+                        <td>Der Klimawandel bedroht die empfindlichen Ökosysteme der Meere und die Artenvielfalt.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Abstand unter der Karte -->
+        <div style="margin-bottom: 5px;"></div>
+
+        <!-- Karte -->
+        <h2>Karte</h2>
+        <div id="map" style="height: 10px;"></div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16372890.930177595!2d132.6016431258312!3d8.92756587228017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x67328f3cd57de715%3A0x1bbe64e7a21aa7fc!2sMarianengraben!5e1!3m2!1sde!2sch!4v1712042853462!5m2!1sde!2sch" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+    <p class="footer-text">&copy; 2024 Unterwasserwelt GmbH | <a href="datenschutz.html" class="footer-text">Datenschutz</a></p>
+    <div class="button-container">
+    <button id="acceptButton" onclick="akzeptieren()">Ich habe es verstanden und akzeptiere</button>
+    </div>
+    <!-- CSRF-Token -->
+    <input type="hidden" id="csrfToken" value="GENERATED_CSRF_TOKEN">
+    </footer>
+
+</body>
+</html>
